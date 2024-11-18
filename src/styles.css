@@ -6,14 +6,14 @@ body {
 .X {
   color: red;
 }
-
+      
 .O {
-  color: blue;
+ color: blue;
 }
 
 #game-grid {
   font: 85px arial, sans-serif;
-  margin: 3px;
+  margin: 3px;             
   display: grid;
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
@@ -21,32 +21,9 @@ body {
   justify-content: center;
 }
 
-#game-grid > button {
-  width: 100px; /* Ensure buttons fill the grid square */
-  height: 100px; /* Ensure buttons are 100px x 100px */
-  font-size: 36px; /* Make the font size smaller to fit X or O */
-  font-family: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background-color: #f0f0f0; /* Light background color */
-  border: 2px solid #ccc; /* Border around buttons */
-  border-radius: 4px; /* Optional rounded corners */
+#game-grid > button {   
+   text-align: center;
+   font-size: 100%;
+   font-family: inherit;
 }
 
-button:focus {
-  outline: none; /* Remove focus outline to clean up button focus */
-}
-
-button:hover {
-  background-color: #e6e6e6; /* Light hover effect */
-}
-
-button.X {
-  color: red; /* Set the X color */
-}
-
-button.O {
-  color: blue; /* Set the O color */
-}
